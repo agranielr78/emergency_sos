@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha Médica de Emergencia</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="app" class="container">
+        <div id="loading" class="card">
+            <h2>Obteniendo ubicación y verificando acceso...</h2>
+            <p>Por favor, permite el acceso a la ubicación si el navegador lo solicita.</p>
+            <div class="spinner"></div>
+        </div>
+
+        <div id="expired" class="card hidden error">
+            <h1>Enlace Expirado</h1>
+            <p>Este código QR / tag NFC ha superado el límite de escaneos permitidos por seguridad.</p>
+        </div>
+
+        <div id="medical-info" class="card hidden">
+            <!-- La información médica se inserta dinámicamente -->
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
